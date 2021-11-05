@@ -1,0 +1,124 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UI = Instance.new("ScreenGui")
+local UI_2 = Instance.new("Frame")
+local BackGround = Instance.new("Frame")
+local Container = Instance.new("Frame")
+local Padding = Instance.new("UIPadding")
+local UIGridLayout = Instance.new("UIGridLayout")
+local AutofarmOn = Instance.new("TextButton")
+local AutofarmOff = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local UnderLine = Instance.new("Frame")
+local Toggle = Instance.new("TextButton")
+local Window = Instance.new("TextLabel")
+
+--Properties:
+
+UI.Name = "UI"
+UI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+UI.Active = true
+UI.Draggable = true
+
+UI_2.Name = "UI"
+UI_2.Parent = UI
+UI_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UI_2.BorderSizePixel = 0
+UI_2.Position = UDim2.new(0, 15, 0, 15)
+UI_2.Size = UDim2.new(0, 190, 0, 30)
+
+BackGround.Name = "BackGround"
+BackGround.Parent = UI_2
+BackGround.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BackGround.BorderSizePixel = 0
+BackGround.Position = UDim2.new(0, 0, 1, 0)
+BackGround.Size = UDim2.new(0, 190, 0, 30)
+
+Container.Name = "Container"
+Container.Parent = UI_2
+Container.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Container.BorderSizePixel = 0
+Container.Position = UDim2.new(0, 0, 1, 0)
+Container.Size = UDim2.new(0, 190, 0, 225)
+
+Padding.Name = "Padding"
+Padding.Parent = Container
+Padding.PaddingLeft = UDim.new(0, 10)
+Padding.PaddingTop = UDim.new(0, 5)
+
+UIGridLayout.Parent = Container
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 170, 0, 50)
+
+AutofarmOn.Name = "AutofarmOn"
+AutofarmOn.Parent = Container
+AutofarmOn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutofarmOn.BackgroundTransparency = 1.000
+AutofarmOn.Size = UDim2.new(0, 200, 0, 50)
+AutofarmOn.Font = Enum.Font.GothamBlack
+AutofarmOn.Text = "Autofarm on"
+AutofarmOn.TextColor3 = Color3.fromRGB(255, 0, 0)
+AutofarmOn.TextSize = 14.000
+AutofarmOn.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/Autofarmon'),true))()
+end)
+AutofarmOff.Name = "AutofarmOff"
+AutofarmOff.Parent = Container
+AutofarmOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutofarmOff.BackgroundTransparency = 1.000
+AutofarmOff.Size = UDim2.new(0, 200, 0, 50)
+AutofarmOff.Font = Enum.Font.GothamBlack
+AutofarmOff.Text = "Autofarm off"
+AutofarmOff.TextColor3 = Color3.fromRGB(255, 0, 0)
+AutofarmOff.TextSize = 14.000
+AutofarmOff.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/Autofarmoff'),true))()
+end)
+TextButton.Parent = Container
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.GothamBlack
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextSize = 14.000
+
+TextButton_2.Parent = Container
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.GothamBlack
+TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UnderLine.Name = "UnderLine"
+UnderLine.Parent = UI_2
+UnderLine.BackgroundColor3 = Color3.fromRGB(255, 25, 25)
+UnderLine.BorderSizePixel = 0
+UnderLine.Position = UDim2.new(0, 0, 1, -1)
+UnderLine.Size = UDim2.new(1, 0, 0, 1)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = UI_2
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.BackgroundTransparency = 1.000
+Toggle.Position = UDim2.new(1, -25, 0, 0)
+Toggle.Size = UDim2.new(0, 25, 1, 0)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "-"
+Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+Toggle.TextSize = 17.000
+
+Window.Name = "Window"
+Window.Parent = UI_2
+Window.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Window.BackgroundTransparency = 1.000
+Window.Size = UDim2.new(1, 0, 1, 0)
+Window.Font = Enum.Font.GothamBlack
+Window.Text = "FingerHUB"
+Window.TextColor3 = Color3.fromRGB(255, 0, 4)
+Window.TextSize = 17.000
