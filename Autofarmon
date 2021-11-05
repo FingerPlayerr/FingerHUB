@@ -1,0 +1,11 @@
+function Click(mouse)
+	
+	getgenv().farmer = true;
+
+	while wait() do
+		if getgenv().farmer == true then
+			game:GetService("Workspace").Events.AddClick:FireServer(AddClick);
+		end
+	end   
+	
+	script.parent.MouseButton1Down:connect(Click)
