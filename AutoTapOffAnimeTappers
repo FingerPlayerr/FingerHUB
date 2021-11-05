@@ -2,7 +2,7 @@ getgenv().farmer = false;
 
 --[[while wait(0.05) do
     if getgenv().farmer == true then
-        game:GetService("ReplicatedStorage").Remotes.Events.Taps:FireServer(Tap)
+        game:GetService("ReplicatedStorage").Remotes.Events.Tap:FireServer(Tap)
 
    end
 end]]--
