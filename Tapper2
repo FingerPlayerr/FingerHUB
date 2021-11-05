@@ -1,0 +1,183 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UI = Instance.new("ScreenGui")
+local UI_2 = Instance.new("Frame")
+local BackGround = Instance.new("Frame")
+local Container = Instance.new("Frame")
+local Padding = Instance.new("UIPadding")
+local UIGridLayout = Instance.new("UIGridLayout")
+local autotapon = Instance.new("TextButton")
+local autotapoff = Instance.new("TextButton")
+local COMMINGSOON = Instance.new("TextButton")
+local tptowaterworld = Instance.new("TextButton")
+local tptoninjaworld = Instance.new("TextButton")
+local tptostandworld = Instance.new("TextButton")
+local tptotokyoalleyworld = Instance.new("TextButton")
+local UnderLine = Instance.new("Frame")
+local Window = Instance.new("TextLabel")
+
+--Properties:
+
+UI.Name = "UI"
+UI.Parent = game.CoreGui
+UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UI_2.Name = "UI"
+UI_2.Parent = UI
+UI_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UI_2.BorderSizePixel = 0
+UI_2.Position = UDim2.new(0, 15, 0, 15)
+UI_2.Size = UDim2.new(0, 190, 0, 30)
+
+BackGround.Name = "BackGround"
+BackGround.Parent = UI_2
+BackGround.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BackGround.BorderSizePixel = 0
+BackGround.Position = UDim2.new(0, 0, 1, 0)
+BackGround.Size = UDim2.new(0, 190, 0, 30)
+
+Container.Name = "Container"
+Container.Parent = UI_2
+Container.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Container.BorderSizePixel = 0
+Container.Position = UDim2.new(0, 0, 1, 0)
+Container.Size = UDim2.new(0, 190, 0, 663)
+
+Padding.Name = "Padding"
+Padding.Parent = Container
+Padding.PaddingLeft = UDim.new(0, 10)
+Padding.PaddingTop = UDim.new(0, 5)
+
+UIGridLayout.Parent = Container
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 170, 0, 50)
+
+autotapon.Name = "autotapon"
+autotapon.Parent = Container
+autotapon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autotapon.BackgroundTransparency = 1.000
+autotapon.Size = UDim2.new(0, 200, 0, 50)
+autotapon.Font = Enum.Font.GothamBlack
+autotapon.Text = "Auto Tap"
+autotapon.TextColor3 = Color3.fromRGB(255, 0, 0)
+autotapon.TextSize = 24.000
+autotapon.TextWrapped = true
+autotapon.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/AutoTapOnAnimeTappers"))()
+end)
+
+autotapoff.Name = "autotapoff"
+autotapoff.Parent = Container
+autotapoff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autotapoff.BackgroundTransparency = 1.000
+autotapoff.Size = UDim2.new(0, 200, 0, 50)
+autotapoff.Font = Enum.Font.GothamBlack
+autotapoff.Text = "Auto Tap Off"
+autotapoff.TextColor3 = Color3.fromRGB(255, 0, 0)
+autotapoff.TextSize = 24.000
+autotapoff.TextWrapped = true
+autotapoff.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/AutoTapOffAnimeTappers"))()
+end)
+
+COMMINGSOON.Name = "COMMING SOON"
+COMMINGSOON.Parent = Container
+COMMINGSOON.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+COMMINGSOON.BackgroundTransparency = 1.000
+COMMINGSOON.Size = UDim2.new(0, 200, 0, 50)
+COMMINGSOON.Font = Enum.Font.GothamBlack
+COMMINGSOON.Text = "Redeem All Codes"
+COMMINGSOON.TextColor3 = Color3.fromRGB(255, 0, 0)
+COMMINGSOON.TextSize = 24.000
+COMMINGSOON.TextWrapped = true
+COMMINGSOON.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/AnimeTappersAutoCodes"))()
+end)
+
+tptowaterworld.Name = "tptowaterworld"
+tptowaterworld.Parent = Container
+tptowaterworld.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tptowaterworld.BackgroundTransparency = 1.000
+tptowaterworld.Size = UDim2.new(0, 200, 0, 50)
+tptowaterworld.Font = Enum.Font.GothamBlack
+tptowaterworld.Text = "Water world"
+tptowaterworld.TextColor3 = Color3.fromRGB(255, 0, 0)
+tptowaterworld.TextSize = 24.000
+tptowaterworld.TextWrapped = true
+tptowaterworld.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/TpWaterWorld"))()
+end)
+
+tptoninjaworld.Name = "tptoninjaworld"
+tptoninjaworld.Parent = Container
+tptoninjaworld.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tptoninjaworld.BackgroundTransparency = 1.000
+tptoninjaworld.Size = UDim2.new(0, 200, 0, 50)
+tptoninjaworld.Font = Enum.Font.GothamBlack
+tptoninjaworld.Text = "Ninja World"
+tptoninjaworld.TextColor3 = Color3.fromRGB(255, 0, 0)
+tptoninjaworld.TextSize = 24.000
+tptoninjaworld.TextWrapped = true
+tptoninjaworld.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/TpNinjaWorld"))()
+end)
+
+tptostandworld.Name = "tptostandworld"
+tptostandworld.Parent = Container
+tptostandworld.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tptostandworld.BackgroundTransparency = 1.000
+tptostandworld.Size = UDim2.new(0, 200, 0, 50)
+tptostandworld.Font = Enum.Font.GothamBlack
+tptostandworld.Text = "Stand World"
+tptostandworld.TextColor3 = Color3.fromRGB(255, 0, 0)
+tptostandworld.TextSize = 24.000
+tptostandworld.TextWrapped = true
+tptostandworld.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/TpStandWorld"))()
+end)
+
+tptotokyoalleyworld.Name = "tptotokyoalleyworld"
+tptotokyoalleyworld.Parent = Container
+tptotokyoalleyworld.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tptotokyoalleyworld.BackgroundTransparency = 1.000
+tptotokyoalleyworld.Size = UDim2.new(0, 200, 0, 50)
+tptotokyoalleyworld.Font = Enum.Font.GothamBlack
+tptotokyoalleyworld.Text = "Tokyo Alley World"
+tptotokyoalleyworld.TextColor3 = Color3.fromRGB(255, 0, 0)
+tptotokyoalleyworld.TextSize = 24.000
+tptotokyoalleyworld.TextWrapped = true
+tptotokyoalleyworld.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/TpToTokyoAlleyWorld"))()
+end)
+
+UnderLine.Name = "UnderLine"
+UnderLine.Parent = UI_2
+UnderLine.BackgroundColor3 = Color3.fromRGB(255, 25, 25)
+UnderLine.BorderSizePixel = 0
+UnderLine.Position = UDim2.new(0, 0, 1, -1)
+UnderLine.Size = UDim2.new(1, 0, 0, 1)
+
+Window.Name = "Window"
+Window.Parent = UI_2
+Window.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Window.BackgroundTransparency = 1.000
+Window.Size = UDim2.new(1, 0, 1, 0)
+Window.Font = Enum.Font.GothamBlack
+Window.Text = "Anime Tappers"
+Window.TextColor3 = Color3.fromRGB(255, 0, 4)
+Window.TextSize = 20.000
+Window.TextWrapped = true
+
+-- Scripts:
+
+local function NNHYDCO_fake_script() -- UI_2.LocalScript 
+	local script = Instance.new('LocalScript', UI_2)
+
+	script.parent.Selectable = true
+	script.Parent.Active = true
+	script.parent.Draggable = true
+end
+coroutine.wrap(NNHYDCO_fake_script)()
