@@ -1,0 +1,7 @@
+getgenv().farmer = false;
+
+--[[while wait(0.05) do
+    if getgenv().farmer == true then
+      game:GetService("ReplicatedStorage").GetMoney:FireServer()
+   end
+end]]--
