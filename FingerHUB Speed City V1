@@ -1,0 +1,168 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UI = Instance.new("ScreenGui")
+local UI_2 = Instance.new("Frame")
+local BackGround = Instance.new("Frame")
+local Container = Instance.new("Frame")
+local Padding = Instance.new("UIPadding")
+local UIGridLayout = Instance.new("UIGridLayout")
+local useallcodes = Instance.new("TextButton")
+local tpwinter = Instance.new("TextButton")
+local tporiginalmap = Instance.new("TextButton")
+local tpvolcano = Instance.new("TextButton")
+local tpbeach = Instance.new("TextButton")
+local tpinfiniteroad = Instance.new("TextButton")
+local UnderLine = Instance.new("Frame")
+local Window = Instance.new("TextLabel")
+
+--Properties:
+
+UI.Name = "UI"
+UI.Parent = game.CoreGui
+UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UI_2.Name = "UI"
+UI_2.Parent = UI
+UI_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UI_2.BorderSizePixel = 0
+UI_2.Position = UDim2.new(0, 15, 0, 15)
+UI_2.Size = UDim2.new(0, 190, 0, 30)
+
+BackGround.Name = "BackGround"
+BackGround.Parent = UI_2
+BackGround.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BackGround.BorderSizePixel = 0
+BackGround.Position = UDim2.new(0, 0, 1, 0)
+BackGround.Size = UDim2.new(0, 190, 0, 30)
+
+Container.Name = "Container"
+Container.Parent = UI_2
+Container.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Container.BorderSizePixel = 0
+Container.Position = UDim2.new(0, 0, 1, 0)
+Container.Size = UDim2.new(0, 190, 0, 663)
+
+Padding.Name = "Padding"
+Padding.Parent = Container
+Padding.PaddingLeft = UDim.new(0, 10)
+Padding.PaddingTop = UDim.new(0, 5)
+
+UIGridLayout.Parent = Container
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 170, 0, 50)
+
+useallcodes.Name = "useallcodes"
+useallcodes.Parent = Container
+useallcodes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+useallcodes.BackgroundTransparency = 1.000
+useallcodes.Size = UDim2.new(0, 200, 0, 50)
+useallcodes.Font = Enum.Font.GothamBlack
+useallcodes.Text = "Redeem Codes"
+useallcodes.TextColor3 = Color3.fromRGB(255, 0, 0)
+useallcodes.TextSize = 24.000
+useallcodes.TextWrapped = true
+useallcodes.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/SpeedCityCodes"))()
+end)
+
+tpwinter.Name = "tpwinter"
+tpwinter.Parent = Container
+tpwinter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpwinter.BackgroundTransparency = 1.000
+tpwinter.Size = UDim2.new(0, 200, 0, 50)
+tpwinter.Font = Enum.Font.GothamBlack
+tpwinter.Text = "TP Winter"
+tpwinter.TextColor3 = Color3.fromRGB(255, 0, 0)
+tpwinter.TextSize = 24.000
+tpwinter.TextWrapped = true
+tpwinter.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/SpeedCityWinter"))()
+end)
+
+tporiginalmap.Name = "tporiginalmap"
+tporiginalmap.Parent = Container
+tporiginalmap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tporiginalmap.BackgroundTransparency = 1.000
+tporiginalmap.Size = UDim2.new(0, 200, 0, 50)
+tporiginalmap.Font = Enum.Font.GothamBlack
+tporiginalmap.Text = "TP Original Map"
+tporiginalmap.TextColor3 = Color3.fromRGB(255, 0, 0)
+tporiginalmap.TextSize = 24.000
+tporiginalmap.TextWrapped = true
+tporiginalmap.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/SpeedCityOriginalMap"))()
+end)
+
+tpvolcano.Name = "tpvolcano"
+tpvolcano.Parent = Container
+tpvolcano.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpvolcano.BackgroundTransparency = 1.000
+tpvolcano.Size = UDim2.new(0, 200, 0, 50)
+tpvolcano.Font = Enum.Font.GothamBlack
+tpvolcano.Text = "TP Volcano"
+tpvolcano.TextColor3 = Color3.fromRGB(255, 0, 0)
+tpvolcano.TextSize = 24.000
+tpvolcano.TextWrapped = true
+tpvolcano.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/SpeedCityVolcano"))()
+end)
+
+tpbeach.Name = "tpbeach"
+tpbeach.Parent = Container
+tpbeach.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpbeach.BackgroundTransparency = 1.000
+tpbeach.Size = UDim2.new(0, 200, 0, 50)
+tpbeach.Font = Enum.Font.GothamBlack
+tpbeach.Text = "TP Beach"
+tpbeach.TextColor3 = Color3.fromRGB(255, 0, 0)
+tpbeach.TextSize = 24.000
+tpbeach.TextWrapped = true
+tpbeach.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/SpeedCityBeach"))()
+end)
+
+tpinfiniteroad.Name = "tpinfiniteroad"
+tpinfiniteroad.Parent = Container
+tpinfiniteroad.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpinfiniteroad.BackgroundTransparency = 1.000
+tpinfiniteroad.Size = UDim2.new(0, 200, 0, 50)
+tpinfiniteroad.Font = Enum.Font.GothamBlack
+tpinfiniteroad.Text = "TP Infinite Road"
+tpinfiniteroad.TextColor3 = Color3.fromRGB(255, 0, 0)
+tpinfiniteroad.TextSize = 24.000
+tpinfiniteroad.TextWrapped = true
+tpinfiniteroad.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FingerPlayerr/FingerHUB/main/SpeedCityInfiniteRoad"))()
+end)
+
+UnderLine.Name = "UnderLine"
+UnderLine.Parent = UI_2
+UnderLine.BackgroundColor3 = Color3.fromRGB(255, 25, 25)
+UnderLine.BorderSizePixel = 0
+UnderLine.Position = UDim2.new(0, 0, 1, -1)
+UnderLine.Size = UDim2.new(1, 0, 0, 1)
+
+Window.Name = "Window"
+Window.Parent = UI_2
+Window.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Window.BackgroundTransparency = 1.000
+Window.Size = UDim2.new(1, 0, 1, 0)
+Window.Font = Enum.Font.GothamBlack
+Window.Text = "Speed City"
+Window.TextColor3 = Color3.fromRGB(255, 0, 4)
+Window.TextSize = 20.000
+Window.TextWrapped = true
+
+-- Scripts:
+
+local function WULWF_fake_script() -- UI_2.LocalScript 
+	local script = Instance.new('LocalScript', UI_2)
+
+	script.parent.Selectable = true
+	script.Parent.Active = true
+	script.parent.Draggable = true
+end
+coroutine.wrap(WULWF_fake_script)()
